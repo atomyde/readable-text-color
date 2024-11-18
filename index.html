@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ReadableText</title>
+	<script type="module">
+		// Import
+		import ReadableText from "./dist/index.js";
+
+		// Apply random background color
+		for (const element of document.getElementsByClassName("random")) {
+			let r = Math.floor(Math.random() * 255);
+			let g = Math.floor(Math.random() * 255);
+			let b = Math.floor(Math.random() * 255);
+			
+			element.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+		}
+
+		// Apply contrast
+		ReadableText.byClass("diff");
+	</script>
+	<style>
+		* {
+			font-family: "Courier New", Courier, monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Background in the same element</h1>
+	<div>
+		<div>
+			<h2 class="diff random">You can read this shit freakin' good</h2>
+		</div>
+		<div>
+			<h2 class="diff random">You can read this shit freakin' good</h2>
+		</div>
+		<div>
+			<h2 class="diff random">You can read this shit freakin' good</h2>
+		</div>
+		<div>
+			<h2 class="diff random">You can read this shit freakin' good</h2>
+		</div>
+		<div>
+			<h2 class="diff random">You can read this shit freakin' good</h2>
+		</div>
+	</div>
+	<hr />
+	<h1>Background in parent</h1>
+	<div class="diff random">
+		<h2>You can read this shit freakin' good</h2>
+		<h2>You can read this shit freakin' good</h2>
+		<h2>You can read this shit freakin' good</h2>
+		<h2>You can read this shit freakin' good</h2>
+	</div>
+	<hr />
+	<h1>Background in parent + Specific elements</h1>
+	<div class="random">
+		<h2 class="diff">You can read this shit freakin' good</h2>
+		<h2>You can read this shit freakin' good</h2>
+		<h2 class="diff">You can read this shit freakin' good</h2>
+		<h2>You can read this shit freakin' good</h2>
+	</div>
+</body>
+
+</html>
