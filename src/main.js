@@ -1,8 +1,8 @@
 /**
- * Apply dark/light text-color based on the background-color
+ * Apply dark/light text color based on the background-color
  * 
  * @author karavaX <karavax@atomyde.net>
- * @version 1.0.0
+ * @version 1.0.1
  */
 export default class ReadableText {
 

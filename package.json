@@ -1,9 +1,9 @@
 {
   "name": "@atomyde/readable-text-color",
-  "description": "Apply dark or bright color according to the background color",
+  "description": "Apply dark/bright text color based on the background-color",
   "author": "karavax <karavax@atomyde.net> (https://atomyde.net)",
-  "version": "1.0.0",
-  "license": "ISC",
+  "version": "1.0.1",
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"
@@ -15,9 +15,11 @@
     }
   },
   "keywords": [
+    "dark",
+    "bright",
     "color",
     "contrast",
-    "difference",
+    "readable",
     "text",
     "black",
     "white"
